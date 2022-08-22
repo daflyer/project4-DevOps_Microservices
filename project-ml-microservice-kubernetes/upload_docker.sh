@@ -6,10 +6,12 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-
+dockerpath="daflyer/prj4microsvc"
 # Step 2:  
 # Authenticate & tag
+docker tag prj4microsvc $dockerpath
 echo "Docker ID and Image: $dockerpath"
-
+docker login
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
