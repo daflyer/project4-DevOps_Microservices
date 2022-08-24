@@ -9,7 +9,9 @@ jobs:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
       - image: circleci/python:3.7.3-stretch
-
+    
+    working_directory: ~/repo
+    
     steps:
       - checkout
 
